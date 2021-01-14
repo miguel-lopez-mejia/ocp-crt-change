@@ -1,0 +1,10 @@
+bex-api-qa apicast
+rubicon-qa apicast
+rubicon-qa apicast-internal
+rubicon-qa bya-portal-backend
+rubicon-qa bya-portal-frontend
+rubicon-qa bya-portal-service
+seguridad-sso apicast-ext
+seguridad-sso prueba-cert-1
+seguridad-sso realm-ext
+seguridad-sso realm-ldap-ext

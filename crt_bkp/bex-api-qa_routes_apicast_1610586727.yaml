@@ -1,0 +1,132 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  annotations:
+    openshift.io/host.generated: "true"
+  creationTimestamp: 2020-02-06T02:41:04Z
+  labels:
+    template.openshift.io/template-instance-owner: 74c49e7b-1149-11ea-b6e7-00505684114b
+  name: apicast
+  namespace: bex-api-qa
+  resourceVersion: "243929120"
+  selfLink: /apis/route.openshift.io/v1/namespaces/bex-api-qa/routes/apicast
+  uid: 1e636e99-488a-11ea-8054-005056840e16
+spec:
+  host: apicast-bex-api-qa.apps.oscp.bcpl.int
+  port:
+    targetPort: proxy
+  tls:
+    caCertificate: |-
+      -----BEGIN CERTIFICATE-----
+      MIIEsTCCA5mgAwIBAgIQCKWiRs1LXIyD1wK0u6tTSTANBgkqhkiG9w0BAQsFADBh
+      MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3
+      d3cuZGlnaWNlcnQuY29tMSAwHgYDVQQDExdEaWdpQ2VydCBHbG9iYWwgUm9vdCBD
+      QTAeFw0xNzExMDYxMjIzMzNaFw0yNzExMDYxMjIzMzNaMF4xCzAJBgNVBAYTAlVT
+      MRUwEwYDVQQKEwxEaWdpQ2VydCBJbmMxGTAXBgNVBAsTEHd3dy5kaWdpY2VydC5j
+      b20xHTAbBgNVBAMTFFJhcGlkU1NMIFJTQSBDQSAyMDE4MIIBIjANBgkqhkiG9w0B
+      AQEFAAOCAQ8AMIIBCgKCAQEA5S2oihEo9nnpezoziDtx4WWLLCll/e0t1EYemE5n
+      +MgP5viaHLy+VpHP+ndX5D18INIuuAV8wFq26KF5U0WNIZiQp6mLtIWjUeWDPA28
+      OeyhTlj9TLk2beytbtFU6ypbpWUltmvY5V8ngspC7nFRNCjpfnDED2kRyJzO8yoK
+      MFz4J4JE8N7NA1uJwUEFMUvHLs0scLoPZkKcewIRm1RV2AxmFQxJkdf7YN9Pckki
+      f2Xgm3b48BZn0zf0qXsSeGu84ua9gwzjzI7tbTBjayTpT+/XpWuBVv6fvarI6bik
+      KB859OSGQuw73XXgeuFwEPHTIRoUtkzu3/EQ+LtwznkkdQIDAQABo4IBZjCCAWIw
+      HQYDVR0OBBYEFFPKF1n8a8ADIS8aruSqqByCVtp1MB8GA1UdIwQYMBaAFAPeUDVW
+      0Uy7ZvCj4hsbw5eyPdFVMA4GA1UdDwEB/wQEAwIBhjAdBgNVHSUEFjAUBggrBgEF
+      BQcDAQYIKwYBBQUHAwIwEgYDVR0TAQH/BAgwBgEB/wIBADA0BggrBgEFBQcBAQQo
+      MCYwJAYIKwYBBQUHMAGGGGh0dHA6Ly9vY3NwLmRpZ2ljZXJ0LmNvbTBCBgNVHR8E
+      OzA5MDegNaAzhjFodHRwOi8vY3JsMy5kaWdpY2VydC5jb20vRGlnaUNlcnRHbG9i
+      YWxSb290Q0EuY3JsMGMGA1UdIARcMFowNwYJYIZIAYb9bAECMCowKAYIKwYBBQUH
+      AgEWHGh0dHBzOi8vd3d3LmRpZ2ljZXJ0LmNvbS9DUFMwCwYJYIZIAYb9bAEBMAgG
+      BmeBDAECATAIBgZngQwBAgIwDQYJKoZIhvcNAQELBQADggEBAH4jx/LKNW5ZklFc
+      YWs8Ejbm0nyzKeZC2KOVYR7P8gevKyslWm4Xo4BSzKr235FsJ4aFt6yAiv1eY0tZ
+      /ZN18bOGSGStoEc/JE4ocIzr8P5Mg11kRYHbmgYnr1Rxeki5mSeb39DGxTpJD4kG
+      hs5lXNoo4conUiiJwKaqH7vh2baryd8pMISag83JUqyVGc2tWPpO0329/CWq2kry
+      qv66OSMjwulUz0dXf4OHQasR7CNfIr+4KScc6ABlQ5RDF86PGeE6kdwSQkFiB/cQ
+      ysNyq0jEDQTkfa2pjmuWtMCNbBnhFXBYejfubIhaUbEv2FOQB3dCav+FPg5eEveX
+      TVyMnGo=
+      -----END CERTIFICATE-----
+    certificate: |-
+      -----BEGIN CERTIFICATE-----
+      MIIFyDCCBLCgAwIBAgIQBZWkxCALaIwk3Nu6ygv8eDANBgkqhkiG9w0BAQsFADBe
+      MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3
+      d3cuZGlnaWNlcnQuY29tMR0wGwYDVQQDExRSYXBpZFNTTCBSU0EgQ0EgMjAxODAe
+      Fw0yMDAxMTQwMDAwMDBaFw0yMTAxMTQxMjAwMDBaMB4xHDAaBgNVBAMMEyoub3Nx
+      LmJhbmNvcHBlbC5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDC
+      1otYWVpaErGOs6iB3xe+60chrEexnYh0ArMK4DEDQTEj32UjMdOl+V5WkHX50x3/
+      CL/6CXbK6V1YNEK+rvlv9MjEXBSPkn3bJyr0JKNxVvHT0dWAMBtrpOtusrG7kg3R
+      +2EYAkM6TVbo6VP5dv+zetTxNQSoDsnIupnZe/C2y+3HpwN8kRmxJnXvGz6p3HlQ
+      BoVFSi3Uj9D2WOlb2mN10ybnGxQLF6V1v6073zrjho4mCDk2ROnhaAcc092LgGA/
+      VJZcvtXYX+jBhIpm9TJ5KG2mWs5V6XsusWsu/2GkQK3sXKKu/Ej8g1GSyJReJ5wF
+      LEnrJGmEsvIdV6wx1RRTAgMBAAGjggLAMIICvDAfBgNVHSMEGDAWgBRTyhdZ/GvA
+      AyEvGq7kqqgcglbadTAdBgNVHQ4EFgQUWhfx3XehkEklYQ8yrwGviG0fQX8wMQYD
+      VR0RBCowKIITKi5vc3EuYmFuY29wcGVsLmNvbYIRb3NxLmJhbmNvcHBlbC5jb20w
+      DgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjA+
+      BgNVHR8ENzA1MDOgMaAvhi1odHRwOi8vY2RwLnJhcGlkc3NsLmNvbS9SYXBpZFNT
+      TFJTQUNBMjAxOC5jcmwwTAYDVR0gBEUwQzA3BglghkgBhv1sAQIwKjAoBggrBgEF
+      BQcCARYcaHR0cHM6Ly93d3cuZGlnaWNlcnQuY29tL0NQUzAIBgZngQwBAgEwdQYI
+      KwYBBQUHAQEEaTBnMCYGCCsGAQUFBzABhhpodHRwOi8vc3RhdHVzLnJhcGlkc3Ns
+      LmNvbTA9BggrBgEFBQcwAoYxaHR0cDovL2NhY2VydHMucmFwaWRzc2wuY29tL1Jh
+      cGlkU1NMUlNBQ0EyMDE4LmNydDAJBgNVHRMEAjAAMIIBBgYKKwYBBAHWeQIEAgSB
+      9wSB9ADyAHcAfT7y+I//iFVoJMLAyp5SiXkrxQ54CX8uapdomX4i8NcAAAFvpU/r
+      GAAABAMASDBGAiEAoORkja80lZX9hETQRLSBkBmBN+PoeM/NsVVjR6Ku0QoCIQDZ
+      jlb+grlp0yBWd0hh8uX1HhxqvREGOZBDuIonVhLvvgB3AFzcQ5L+5qtFRLFemtRW
+      5hA3+9X6R9yhc5SyXub2xw7KAAABb6VP6yoAAAQDAEgwRgIhAOk/GYaSQ7SAiE7x
+      CdN15wRzUm4fFOMYbtPiSMA2w076AiEA2YeFNqJEtZKw6Wi2vZaOMyaryzpTh+xY
+      25XoTM5OlCEwDQYJKoZIhvcNAQELBQADggEBAMPupCKaxv03myABJDWQCcJsiGDf
+      ZqIWnjTZpJJxINN7sVzWYieiHECUjo5banbtKF5dDGh+IfO3pdR/mW346HvZ8nI5
+      s6Ad8sQY29WHrM+MLqVkA76kP7MmRmE8mySucQbAMMi+9OfvXZORb3TJPq6Jy2Rc
+      VG1eI+J53Azql/WKCGumdR0P5yf53rtggcrq+sp6YzRZfIobxGPTN1EWTBdRoIvO
+      KJFgIBOssuXSbJ9AyFX1Yy53jck72JVfkybm1jk/c7+pwxdxRIVuZ0uYS80vc4k2
+      4PqRyZ6ChPWdooDbVeH3VVaG+zc6oVMZJDLMHV2hE9Ygwzksp9gk0Nn5o8Y=
+      -----END CERTIFICATE-----
+    key: |-
+      -----BEGIN PRIVATE KEY-----
+      MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDC1otYWVpaErGO
+      s6iB3xe+60chrEexnYh0ArMK4DEDQTEj32UjMdOl+V5WkHX50x3/CL/6CXbK6V1Y
+      NEK+rvlv9MjEXBSPkn3bJyr0JKNxVvHT0dWAMBtrpOtusrG7kg3R+2EYAkM6TVbo
+      6VP5dv+zetTxNQSoDsnIupnZe/C2y+3HpwN8kRmxJnXvGz6p3HlQBoVFSi3Uj9D2
+      WOlb2mN10ybnGxQLF6V1v6073zrjho4mCDk2ROnhaAcc092LgGA/VJZcvtXYX+jB
+      hIpm9TJ5KG2mWs5V6XsusWsu/2GkQK3sXKKu/Ej8g1GSyJReJ5wFLEnrJGmEsvId
+      V6wx1RRTAgMBAAECggEAFr11nAUpv3OJF6+uTiIcomLRdYOnBnrtbyTVgsJx1gBo
+      3Nf49Oee3TNCqHXJ3zOdv6NkzKkIHVypUV8gHyNK5585Q3m/yJX/bHGg2Mfh75uH
+      NAK8mW6D9MdV1yCyD8NXK5fcWDIDaK2YJCz/aRFTfL4sVk6q0XaQZIYq6LBHgv4L
+      x+Ux/7NS44T3SICyrd7IHSi+/kTA1Vk1j7lG5F5mkfulwrOs3VQ9xMP+yOLNTwTC
+      Z5ReqICl0lddlQTO6hEzqSEk+C3E9mRfIq3kpUWY23AuE1O2aE+rKnhaOjQLJXe1
+      cKOYb08EFC95WbaiLgwJGryP34whHbOVxuey4LxroQKBgQD2+2ukaLS8twxN+p67
+      SoGuXFTP1MJg2APOTh7Qu4QHrV2/6IbPSj4/gwpEoLf1ckidc49OGaDfJ6Cc7yMi
+      wB4SOrTotGCA1Z7ypKKl0I76l8+I9z5F22JTAq+vMNu1Nt27xlAVe+gyeqiH7R15
+      6l2rPsNUY19sJPcbUjWS/bpc0QKBgQDJ87m333A9jiveExPAO4csJW7Vb1WHGd0k
+      D5U1ygd5uXUcFJY5aEnILXyx1sZF80xItTDaWTVZ2G4F7XwemfsQUx0dXU67Jqd5
+      aGLejsKnXMcN3d+62QpNwJbYqBU8qLsa1agcPy3P6mQ5fgrTnD608O0ScYNNb6Qp
+      LSVz2t4X4wKBgQDvrMCixXFPCRuJuMG84urBt5weK0uOC1J2K90/lhjkEls91nqs
+      QlHx9EpMmuKp74OEOBZDJh+1LpFweahRGrqT2iChChn0LFmZAidMXf3CNPwS4Euw
+      ItthzuOKURGE4399r08b6ihEhD9z2KiYHNVVTwzioaSCH8Uk4DxZLpxhYQKBgBhi
+      RjVOVDYKeX953DOkvGB3MJeytqf2Vn4pJ4H0H8zxuJMoZS8PSYFTBLBQV2ZQxxAs
+      WHa0uL1dZYNvtkHXo7nH30cRYhU0yJnfIbjvkc81Y49oD8B2vki/DTehq9bEJLtL
+      ut2WP0jQa0OJ1XLRdbzRLj7A1/K8nRyfp9sCPTizAoGBAOUd9YHFPfnOHuHbhsNo
+      ehMc9f58h0x+rvSx9J1dr/kp2Z003Tyk5Qb+wlIOyHsL5ceKsmRlMhLMdyvl9umY
+      CnDTHCLgf2tqFd6n+CltQZvMAvT9o7ubTA3NSFLY3PQxD6H80lqrDNnq6s1otDjz
+      0LuiS6SqKCgxR359PHObQlMf
+      -----END PRIVATE KEY-----
+    termination: edge
+  to:
+    kind: Service
+    name: apicast
+    weight: 100
+  wildcardPolicy: None
+status:
+  ingress:
+  - conditions:
+    - lastTransitionTime: 2020-02-06T02:41:04Z
+      status: "True"
+      type: Admitted
+    host: apicast-bex-api-qa.apps.oscp.bcpl.int
+    routerName: router
+    wildcardPolicy: None
+  - conditions:
+    - lastTransitionTime: 2020-02-06T18:34:52Z
+      status: "True"
+      type: Admitted
+    host: apicast-bex-api-qa.osq.bancoppel.com
+    routerName: router-ext
+    wildcardPolicy: None

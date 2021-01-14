@@ -1,0 +1,134 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: 2020-07-11T01:51:34Z
+  labels:
+    application: sso-app
+    router: ext
+    template: sso72-x509-postgresql-persistent
+    template.openshift.io/template-instance-owner: d0c905c4-bebe-11e9-9c0e-00505699fc5b
+    xpaas: 1.4.14
+  name: ldap-realm
+  namespace: seguridad-sso
+  resourceVersion: "367415390"
+  selfLink: /apis/route.openshift.io/v1/namespaces/seguridad-sso/routes/ldap-realm
+  uid: 0d013705-c319-11ea-9816-00505699c629
+spec:
+  host: realms.os.bancoppel.com
+  path: /auth/realms/LDAP
+  tls:
+    caCertificate: |-
+      -----BEGIN CERTIFICATE-----
+      MIIEsTCCA5mgAwIBAgIQCKWiRs1LXIyD1wK0u6tTSTANBgkqhkiG9w0BAQsFADBh
+      MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3
+      d3cuZGlnaWNlcnQuY29tMSAwHgYDVQQDExdEaWdpQ2VydCBHbG9iYWwgUm9vdCBD
+      QTAeFw0xNzExMDYxMjIzMzNaFw0yNzExMDYxMjIzMzNaMF4xCzAJBgNVBAYTAlVT
+      MRUwEwYDVQQKEwxEaWdpQ2VydCBJbmMxGTAXBgNVBAsTEHd3dy5kaWdpY2VydC5j
+      b20xHTAbBgNVBAMTFFJhcGlkU1NMIFJTQSBDQSAyMDE4MIIBIjANBgkqhkiG9w0B
+      AQEFAAOCAQ8AMIIBCgKCAQEA5S2oihEo9nnpezoziDtx4WWLLCll/e0t1EYemE5n
+      +MgP5viaHLy+VpHP+ndX5D18INIuuAV8wFq26KF5U0WNIZiQp6mLtIWjUeWDPA28
+      OeyhTlj9TLk2beytbtFU6ypbpWUltmvY5V8ngspC7nFRNCjpfnDED2kRyJzO8yoK
+      MFz4J4JE8N7NA1uJwUEFMUvHLs0scLoPZkKcewIRm1RV2AxmFQxJkdf7YN9Pckki
+      f2Xgm3b48BZn0zf0qXsSeGu84ua9gwzjzI7tbTBjayTpT+/XpWuBVv6fvarI6bik
+      KB859OSGQuw73XXgeuFwEPHTIRoUtkzu3/EQ+LtwznkkdQIDAQABo4IBZjCCAWIw
+      HQYDVR0OBBYEFFPKF1n8a8ADIS8aruSqqByCVtp1MB8GA1UdIwQYMBaAFAPeUDVW
+      0Uy7ZvCj4hsbw5eyPdFVMA4GA1UdDwEB/wQEAwIBhjAdBgNVHSUEFjAUBggrBgEF
+      BQcDAQYIKwYBBQUHAwIwEgYDVR0TAQH/BAgwBgEB/wIBADA0BggrBgEFBQcBAQQo
+      MCYwJAYIKwYBBQUHMAGGGGh0dHA6Ly9vY3NwLmRpZ2ljZXJ0LmNvbTBCBgNVHR8E
+      OzA5MDegNaAzhjFodHRwOi8vY3JsMy5kaWdpY2VydC5jb20vRGlnaUNlcnRHbG9i
+      YWxSb290Q0EuY3JsMGMGA1UdIARcMFowNwYJYIZIAYb9bAECMCowKAYIKwYBBQUH
+      AgEWHGh0dHBzOi8vd3d3LmRpZ2ljZXJ0LmNvbS9DUFMwCwYJYIZIAYb9bAEBMAgG
+      BmeBDAECATAIBgZngQwBAgIwDQYJKoZIhvcNAQELBQADggEBAH4jx/LKNW5ZklFc
+      YWs8Ejbm0nyzKeZC2KOVYR7P8gevKyslWm4Xo4BSzKr235FsJ4aFt6yAiv1eY0tZ
+      /ZN18bOGSGStoEc/JE4ocIzr8P5Mg11kRYHbmgYnr1Rxeki5mSeb39DGxTpJD4kG
+      hs5lXNoo4conUiiJwKaqH7vh2baryd8pMISag83JUqyVGc2tWPpO0329/CWq2kry
+      qv66OSMjwulUz0dXf4OHQasR7CNfIr+4KScc6ABlQ5RDF86PGeE6kdwSQkFiB/cQ
+      ysNyq0jEDQTkfa2pjmuWtMCNbBnhFXBYejfubIhaUbEv2FOQB3dCav+FPg5eEveX
+      TVyMnGo=
+      -----END CERTIFICATE-----
+    certificate: |-
+      -----BEGIN CERTIFICATE-----
+      MIIFwzCCBKugAwIBAgIQA8mOewE42rQ5shG3Ik25jDANBgkqhkiG9w0BAQsFADBe
+      MQswCQYDVQQGEwJVUzEVMBMGA1UEChMMRGlnaUNlcnQgSW5jMRkwFwYDVQQLExB3
+      d3cuZGlnaWNlcnQuY29tMR0wGwYDVQQDExRSYXBpZFNTTCBSU0EgQ0EgMjAxODAe
+      Fw0yMDAxMTQwMDAwMDBaFw0yMTAxMTQxMjAwMDBaMB0xGzAZBgNVBAMMEioub3Mu
+      YmFuY29wcGVsLmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJ9z
+      TWGWGPPsycLsjG8R+cnA2c4SdOFaTOufmN75mq+2xAg5CbUd1rlRu5Xa6hBPuPfT
+      nTj5EAOXxwFHI1smFjF5xIhZs21Kfi2lIl48JrwsC3fkoZ/uH4SjymKU7ts6g+sx
+      q+bBqnb0Iv7g+xedRXajowqDelL6emuSArZ0CfjS5VI40wWYTEH7lvBsXzQcD3V3
+      vymY/uAhkf1T723Iz8lhvuA/ymk8YtFUulrgPZp9CB0fvBLl3DOWYHFuTkllOoSb
+      VAWpGBo/YWifwPadD+DhZbgY9uPT0Razqbb4E4Zplzi8Tw9G8QTiYHX0FG8F0dgX
+      1wJoxs7oLEly5NkfTGkCAwEAAaOCArwwggK4MB8GA1UdIwQYMBaAFFPKF1n8a8AD
+      IS8aruSqqByCVtp1MB0GA1UdDgQWBBRIfvkVe20F0iVTHbHwSt8mi6MkhzAvBgNV
+      HREEKDAmghIqLm9zLmJhbmNvcHBlbC5jb22CEG9zLmJhbmNvcHBlbC5jb20wDgYD
+      VR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjA+BgNV
+      HR8ENzA1MDOgMaAvhi1odHRwOi8vY2RwLnJhcGlkc3NsLmNvbS9SYXBpZFNTTFJT
+      QUNBMjAxOC5jcmwwTAYDVR0gBEUwQzA3BglghkgBhv1sAQIwKjAoBggrBgEFBQcC
+      ARYcaHR0cHM6Ly93d3cuZGlnaWNlcnQuY29tL0NQUzAIBgZngQwBAgEwdQYIKwYB
+      BQUHAQEEaTBnMCYGCCsGAQUFBzABhhpodHRwOi8vc3RhdHVzLnJhcGlkc3NsLmNv
+      bTA9BggrBgEFBQcwAoYxaHR0cDovL2NhY2VydHMucmFwaWRzc2wuY29tL1JhcGlk
+      U1NMUlNBQ0EyMDE4LmNydDAJBgNVHRMEAjAAMIIBBAYKKwYBBAHWeQIEAgSB9QSB
+      8gDwAHUAu9nfvB+KcbWTlCOXqpJ7RzhXlQqrUugakJZkNo4e0YUAAAFvpYKj/gAA
+      BAMARjBEAiA16FbsasVNsi4kqjoJl6V1nTa+j0uXu+CC1F270TLiyAIgYShMF3us
+      QMUvy2Qt6jz/2GISC+SU35Lualn6xRAEJMAAdwBc3EOS/uarRUSxXprUVuYQN/vV
+      +kfcoXOUsl7m9scOygAAAW+lgqRGAAAEAwBIMEYCIQDyCaPDn9esM+xd1B4qeGx5
+      TcyPUnkUwSWH4AnoPlQ2BAIhAO9DqIpCqdmkK1SJ/GgwrdVjyN+6vEEUzbP6oiob
+      fUtSMA0GCSqGSIb3DQEBCwUAA4IBAQBcBkTV62WBvlfu8ZcXjSpwROx7vAEY2Lf4
+      54iKZBP50tm6zdNzUx/O0+nzhSqHUjO6L3O1JuAYspEysPT5hp0eRK/SW9K4HATm
+      +PWmO0ryi8jJEfCM2dbk1NettpJT97sNgzCigzTIgu064cFY4rTsg+mLumynX4H2
+      en8N+TuKxVIlbf7+dje3WArL7/eW3rfDmSHTU99u0trwT344EGOUfNfFPvt8ip4I
+      VHzi7XCzcAhmk4c5881JEimlbvG5DOyxfnqpg+qzaA8giIEemmnKTaN4ClIVPeYU
+      ezdjGLmOQzjVKYeyFgfYvBKRlLAeQojSAGiH3WW6j/JVH1RlPNcH
+      -----END CERTIFICATE-----
+    insecureEdgeTerminationPolicy: Redirect
+    key: |-
+      -----BEGIN PRIVATE KEY-----
+      MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCfc01hlhjz7MnC
+      7IxvEfnJwNnOEnThWkzrn5je+ZqvtsQIOQm1Hda5UbuV2uoQT7j30504+RADl8cB
+      RyNbJhYxecSIWbNtSn4tpSJePCa8LAt35KGf7h+Eo8pilO7bOoPrMavmwap29CL+
+      4PsXnUV2o6MKg3pS+nprkgK2dAn40uVSONMFmExB+5bwbF80HA91d78pmP7gIZH9
+      U+9tyM/JYb7gP8ppPGLRVLpa4D2afQgdH7wS5dwzlmBxbk5JZTqEm1QFqRgaP2Fo
+      n8D2nQ/g4WW4GPbj09EWs6m2+BOGaZc4vE8PRvEE4mB19BRvBdHYF9cCaMbO6CxJ
+      cuTZH0xpAgMBAAECggEAN2xgrVb6/W6FAxguCD17UcGS86o+rkYxDoW/IWIpfoJM
+      yX7p/OaOSIQ8a+5YBatwY9ROhgssodMT/UG47GnktPXadnqXf5mxGjSYKaFG5Yl5
+      wwbZlzmyAuzb4EBcdh900z/EvMT8d7SMpYOWQ7MK/h4LAhCJaGZgPxvVjY3wGWjI
+      kLzm/MzqA7MGsbGeRAVeFwxf+3A9d0Eb3oc3VkRBMq/X5+Pb2Z5HLARSD/gjqzNh
+      +0vLf/9mey5bBea34yGdIygTZFxlwGMFtFYYQbK7eoKzL81nESm+nXKc68MwAxOO
+      fAMkXHCtaHSu0FRSk20kWbzztcyRFAJ91KZqIZIJwQKBgQDKYlR+ShCUtCucEjXA
+      qwalIRj0fBb0tJbziJBI9UBLSKOkSIA7Fc+0eW7u13plB9cuX37PNVcS5L/tdPQ/
+      HAF1qNQ6RrA9kFgP70g2wwk7fuUilPas94dJ0Hkszl+PPC3veleIc0GsDHpHUqTd
+      ps4yfAzjBggaURPvCRM3I9UeDQKBgQDJsTZ1+kipvzPhdlORkisDbjCXnV4oeSTn
+      MSrLIoASm26lIw5oeJNgJYMxR9tmFpd/ZxOcUHd5OE63Fc9bh4vF4jy150BNmzOI
+      aYVty1iGbCo6kXvYZCGOnEwVFqAGtuLbqvTMAiOi0RhoMlU/9H91NRmXTzh0YqNb
+      J2w72HwszQKBgQCWmyoJeRBxuMojMKHzqNIfHEw31Ag5PhJ/VIca4/dejsXIQXO7
+      hHW29g8Jiiy49ma5SbNSe306wCPbj4cbV7n2Vxbn7ybECaCe6xAwQF+keMAHRhdz
+      jBiPY6ZpI4KVUtFUPxTYo/yhDgAJB4VMtQ8JHqtwXlK1UtSks3orNG0qGQKBgGSz
+      Lv7OfJML3MpX+rd2pDUtQeOg9Y79lTg86yHK0uj3Y9HdY+czNFnPwOXM+7TH2NIK
+      U9c6sbv7KgntQL9xOI8POsKTeB6HO76C+NRtr4BF5vuhAZVzwPFkBfSNfE5951xH
+      ybtF4ib7gNUdNEUfPLf3UBSkwAoT6X2sfDSRDMaNAoGAWAy4+5ZVXjA1ivOdWXQQ
+      TCktVBLdJ0dg5tbEd1ZXM3P0XyCmQgnFD7uj+4+6QYzU2r2h5WMR5MnEJdHAq8ga
+      LMwfshloNs86VObAwofQt/S8WXO1R1Lmh4vPZePnt9wM4H52COF9+J1Cuorp4CBz
+      kkSad3zilYjZjTy0VHzffgw=
+      -----END PRIVATE KEY-----
+    termination: reencrypt
+  to:
+    kind: Service
+    name: sso
+    weight: 100
+  wildcardPolicy: None
+status:
+  ingress:
+  - conditions:
+    - lastTransitionTime: 2021-01-10T03:10:55Z
+      status: "True"
+      type: Admitted
+    host: realms.os.bancoppel.com
+    routerName: router
+    wildcardPolicy: None
+  - conditions:
+    - lastTransitionTime: 2021-01-10T03:16:19Z
+      status: "True"
+      type: Admitted
+    host: realms.os.bancoppel.com
+    routerName: router-ext
+    wildcardPolicy: None
