@@ -24,11 +24,11 @@ The three commands that will help us save the files
 -TLS_sav_KEY=TLS_${SAV}_KEY<br>
 #
 ------------------------------------------------------------------------
-And now the new certificate starts to be saved with all the files
+<u>And now the new certificate starts to be saved with all the files</u>
 #
 #
 #
-Then the original certificate will be saved
+<u>Then the original certificate will be saved</u>
 #
 #
  <p> Then the application of the certificates begins.<br>
