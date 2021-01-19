@@ -24,11 +24,17 @@ The three commands that will help us save the files
 -TLS_sav_KEY=TLS_${SAV}_KEY<br>
 #
 ------------------------------------------------------------------------
-<u>And now the new certificate starts to be saved with all the files</u>
+And now the new certificate starts to be saved with all the files.<br>
+-TLS_new_CRT=$(<crt_new/cert-new.crt)<br>
+-TLS_new_CAC=$(<crt_new/CAcert-new.crt)<br>
+-TLS_new_KEY=$(<crt_new/new.key)<br>
 #
 #
-#
-<u>Then the original certificate will be saved</u>
+
+Then the original certificate will be saved.<br>
+TLS_ori_CRT=$(<crt_ori/cert-ori.crt)<br>
+TLS_ori_CAC=$(<crt_ori/CAcert-ori.crt)<br>
+TLS_ori_KEY=$(<crt_ori/ori.key)<br>
 #
 #
  <p> Then the application of the certificates begins.<br>
