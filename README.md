@@ -3,14 +3,14 @@
 ------------------------------------------------------------------
 Funcion.
 ------------------------------------------------------------------
-Lo que se realiza para el cambio de certificado es lo siguiente:<br>
+<p> Lo que se realiza para el cambio de certificado es lo siguiente:<br>
 Empieza guardando el certificado original (actual) y a su vez
 el nuevo, una vez que se hayan guardado comienza a rescribir(aplicar)
 el certificado original o el actual por el nuevo, dependiendo de
 el orden en que lo hayas puesto.
 Finalmente comienza a leer el namespace y la ruta
 en donde se encuentra el certificado para realizar la modificacion 
-del mismo.
+del mismo. </p>
 -------------------------------------------------------------------
 Requeriminetos.
 ---------------------------------------------------------------------
