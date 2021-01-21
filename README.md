@@ -11,7 +11,8 @@ el orden en que lo hayas puesto.
 Finalmente comienza a leer el namespace y la ruta
 en donde se encuentra el certificado para realizar la modificacion 
 del mismo. </p>
--------------------------------------------------------------------
+
+---------------------------------------------------------------------
 Requeriminetos.
 ---------------------------------------------------------------------
 Para realizar el cambio se necesita:<br>
@@ -20,9 +21,9 @@ Los arvhivos <br>
 -TLS_sav_CRT=TLS_${SAV}_CRT<br>
 -TLS_sav_KEY=TLS_${SAV}_KEY<br>
 Tanto del certificado nuevo como del original, a su vez tambien
-necesitamos - 
-- Una terminal.
-- Y el OpenShift Client para su ejecucion.
+necesitamos - <br>
+- Una terminal.<br>
+- Y el OpenShift Client para su ejecucion.<br>
 
 -----------------------------------------------------------------
 Uso.
