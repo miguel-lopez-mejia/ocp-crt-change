@@ -16,14 +16,14 @@ del mismo. </p>
 Requeriminetos.
 -------------------------------------------------------------
 Para realizar el cambio se necesita:<br>
-Los directorios de:<br>
+El directorio de:<br>
 <strong>crt_ori(con sus respectivos archivos)</strong><br>
 <pre>
 - cert-ori.crt</li><br>
 - Cacert-ori.crt</li><br>
 - ori.key</li><br>
 - list<br></pre>
-Y tambien los directorios de:<br>
+Y tambien el directorio de:<br>
 <strong>crt_new (con sus respectivos archivos)</strong><br>
 <pre>
 -cert-new.crt<br>
@@ -40,7 +40,7 @@ A su vez tambien necesitamos:  <br>
 
 Uso.
 -------------------------------------------------------------
-Cambia los certificados en las rutas de : <br>
+Cambiar los certificados en las rutas de : <br>
       <pre>- Certificate< //Por parte del servidor <br>
            - CAcertificate//Por parte de la Autoridad de Certificacion<br>
            - Key//La llave del certificado
