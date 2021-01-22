@@ -2,7 +2,7 @@
 # ocp-crt-change
 
 Descripcion.
-
+------------------------------------------------------------------------
 <p> Lo que se realiza para el cambio de certificado es lo siguiente:<br>
 Empieza guardando el certificado original (actual) y a su vez
 el nuevo, una vez que se hayan guardado comienza a reescribir(aplicar)
@@ -14,19 +14,21 @@ del mismo. </p>
 
 
 Requeriminetos.
-
+-------------------------------------------------------------
 Para realizar el cambio se necesita:<br>
 Los directorios de:<br>
 <strong>crt_ori(con sus respectivos archivos)</strong><br>
+<pre>
 -cert-ori.crt<br>
 -Cacert-ori.crt<br>
 -ori.key<br>
--list<br>
+-list<br></pre>
 Y tambien los directorios de:<br>
 <strong>crt_new (con sus respectivos archivos)</strong><br>
+<pre>
 -cert-new.crt<br>
 -Cacert-new.crt<br>
--new.key<br>
+-new.key<br></pre>
 <br>
 A su vez tambien necesitamos:  <br>
 - Una terminal.<br>
@@ -35,23 +37,24 @@ A su vez tambien necesitamos:  <br>
 
 
 Uso.
-
+-------------------------------------------------------------
 Cambiar los certificados en las rutas de : <br>
-           - Certificate<br>
+      <pre>- Certificate<br>
            - CAcertificate and<br>
-           - Key<br>
+           - Key<br></pre>
 
 Modo de uso:<br>    
-
+<pre>
  -"new" Change/Save new cert.
  
  -"emp" Change/Save empty cert.
  
  -"ori" Change/Save the current cert.
+ </pre>
  
  <p>"En donde el primer argumento es lo que se va a cambiar 
     y el segundo argumento lo que se va a respaldar"</p>
-
+--------------------------------------------------------------------------
 #
 #
 The three commands that will help us save the files
