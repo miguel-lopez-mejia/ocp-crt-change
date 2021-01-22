@@ -19,10 +19,10 @@ Para realizar el cambio se necesita:<br>
 Los directorios de:<br>
 <strong>crt_ori(con sus respectivos archivos)</strong><br>
 <pre>
--cert-ori.crt<br>
--Cacert-ori.crt<br>
--ori.key<br>
--list<br></pre>
+- cert-ori.crt</li><br>
+- Cacert-ori.crt</li><br>
+- ori.key</li><br>
+- list<br></pre>
 Y tambien los directorios de:<br>
 <strong>crt_new (con sus respectivos archivos)</strong><br>
 <pre>
@@ -30,6 +30,7 @@ Y tambien los directorios de:<br>
 -Cacert-new.crt<br>
 -new.key<br></pre>
 <br>
+
 A su vez tambien necesitamos:  <br>
 <pre>
 - Una terminal.<br>
@@ -40,9 +41,9 @@ A su vez tambien necesitamos:  <br>
 Uso.
 -------------------------------------------------------------
 Cambia los certificados en las rutas de : <br>
-      <pre>- Certificate<br>
-           - CAcertificate and<br>
-           - Key<br></pre>
+      <pre>- Certificate<br> //Por parte del servidor 
+           - CAcertificate<br>//Por parte de la Autoridad de Certificacion
+           - Key<br></pre>//La llave del certificado
 
 Modo de uso:<br>    
 <pre>
@@ -63,13 +64,13 @@ Then the application of the certificates begins.<br>
 3. And finally with the empty certificate //That this only throws empty arguments<br>
 </br></pre>
 
-"En donde guarda la configuracion del certificado en un archiv .yml"
+"En donde guarda la configuracion del certificado en un archivo .yml"
 
-Finalmente - Leer namespace y ruta para modificar el cert.
-"En donde toma el certificado y lo pone en la ruta, 
+Finalmente - Leer namespace y ruta para modificar el cert.<br>
+<p>"En donde toma el certificado y lo pone en la ruta, 
 no sin antes realizar un respaldo de la configuracion de la ruta,
 creando una carpeta de backup, y por ultimo saca el certificado de
-la ruta y te imprime los datos del certificado nuevo"
+la ruta y te imprime los datos del certificado nuevo"</p>
 
 
  
