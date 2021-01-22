@@ -27,7 +27,7 @@ Y tambien los archivos de:<br>
 -cert-new.crt<br>
 -Cacert-new.crt<br>
 -new.key<br>
-
+<br>
 A su vez tambien necesitamos:  <br>
 - Una terminal.<br>
 - Y el OpenShift Client para su ejecucion.<br>
