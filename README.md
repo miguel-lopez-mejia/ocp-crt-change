@@ -61,11 +61,11 @@ Modo de uso:<br>
  
 
 <strong><p> Run the command:<br></strong>
-./change-cert.sh <change_select> <save_select><br>
+<code>./change-cert.sh <change_select> <save_select></code><br>
 "En donde el primer argumento es lo que se va a cambiar 
  y el segundo argumento lo que se va a respaldar"<br></p>
     <code>    Example:<br>
-    ./change-cert.sh new ori<br></code>
+    ./change-cert.sh new ori</code><br>
     
 Now the application of the new certificate begins, 
 are without before saving the files of the directories ori and new.<br>
