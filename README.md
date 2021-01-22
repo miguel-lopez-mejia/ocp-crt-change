@@ -41,10 +41,10 @@ A su vez tambien necesitamos:  <br>
 Uso.
 -------------------------------------------------------------
 Cambia los certificados en las rutas de : <br>
-      <pre>- Certificate<br> //Por parte del servidor 
-           - CAcertificate<br>//Por parte de la Autoridad de Certificacion
-           - Key<br></pre>//La llave del certificado
-
+      <pre>- Certificate< //Por parte del servidor <br>
+           - CAcertificate//Por parte de la Autoridad de Certificacion<br>
+           - Key//La llave del certificado
+<br></pre>
 Modo de uso:<br>    
 <pre>
  -"new" Change/Save new cert.
