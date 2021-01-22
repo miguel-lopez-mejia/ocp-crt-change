@@ -1,8 +1,8 @@
-------------------------------------------------------------------
+
 # ocp-crt-change
-------------------------------------------------------------------
+
 Descripcion.
-------------------------------------------------------------------
+
 <p> Lo que se realiza para el cambio de certificado es lo siguiente:<br>
 Empieza guardando el certificado original (actual) y a su vez
 el nuevo, una vez que se hayan guardado comienza a reescribir(aplicar)
@@ -12,18 +12,18 @@ Finalmente comienza a leer el namespace y la ruta
 en donde se encuentra el certificado para realizar la modificacion 
 del mismo. </p>
 
----------------------------------------------------------------------
+
 Requeriminetos.
----------------------------------------------------------------------
+
 Para realizar el cambio se necesita:<br>
 Los directorios de:<br>
-<strong>crt_ori</strong><br>
+<strong>crt_ori(con sus respectivos archivos)</strong><br>
 -cert-ori.crt<br>
 -Cacert-ori.crt<br>
 -ori.key<br>
 -list<br>
-Y tambien los archivos de:<br>
-<strong>crt_new</strong><br>
+Y tambien los directorios de:<br>
+<strong>crt_new (con sus respectivos archivos)</strong><br>
 -cert-new.crt<br>
 -Cacert-new.crt<br>
 -new.key<br>
@@ -33,21 +33,24 @@ A su vez tambien necesitamos:  <br>
 - Y el OpenShift Client para su ejecucion.<br>
 - Sesion de Cluster en donde se va a aplicar el certificado. 
 
------------------------------------------------------------------
-Uso.
-------------------------------------------------------------------
-Change the routes in
-           Certificate,
-           CAcertificate and
-           Key
 
-Use mode select:    
+Uso.
+
+Cambiar los certificados en las rutas de : <br>
+           - Certificate<br>
+           - CAcertificate and<br>
+           - Key<br>
+
+Modo de uso:<br>    
 
  -"new" Change/Save new cert.
  
  -"emp" Change/Save empty cert.
  
  -"ori" Change/Save the current cert.
+ 
+ <p>"En donde el primer argumento es lo que se va a cambiar 
+    y el segundo argumento lo que se va a respaldar"</p>
 
 #
 #
