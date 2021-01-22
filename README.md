@@ -60,7 +60,10 @@ Modo de uso:<br>
  </pre>
  
  <p>"En donde el primer argumento es lo que se va a cambiar 
-    y el segundo argumento lo que se va a respaldar"</p>
+    y el segundo argumento lo que se va a respaldar"</p><br>
+    
+ <p>   Example:<br>
+    ./change-cert.sh new ori</p><br>
     
 Now the application of the new certificate begins, 
 are without before saving the files of the directories ori and new.<br>
