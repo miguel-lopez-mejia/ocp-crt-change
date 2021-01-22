@@ -1,11 +1,11 @@
 ------------------------------------------------------------------
 # ocp-crt-change
 ------------------------------------------------------------------
-Funcion.
+Descripcion.
 ------------------------------------------------------------------
 <p> Lo que se realiza para el cambio de certificado es lo siguiente:<br>
 Empieza guardando el certificado original (actual) y a su vez
-el nuevo, una vez que se hayan guardado comienza a rescribir(aplicar)
+el nuevo, una vez que se hayan guardado comienza a reescribir(aplicar)
 el certificado original o el actual por el nuevo, dependiendo de
 el orden en que lo hayas puesto.
 Finalmente comienza a leer el namespace y la ruta
@@ -16,7 +16,7 @@ del mismo. </p>
 Requeriminetos.
 ---------------------------------------------------------------------
 Para realizar el cambio se necesita:<br>
-Los arvhivos <br>
+Los archivos <br>
 -TLS_sav_CAC=TLS_${SAV}_CAC<br>
 -TLS_sav_CRT=TLS_${SAV}_CRT<br>
 -TLS_sav_KEY=TLS_${SAV}_KEY<br>
