@@ -59,10 +59,12 @@ Modo de uso:<br>
   Actual)
  </pre>
  
- <p>"En donde el primer argumento es lo que se va a cambiar 
-    y el segundo argumento lo que se va a respaldar"</p><br>
-    
- <p>   Example:<br>
+
+<p> Run the command:<br>
+./change-cert.sh <change_select> <save_select><br>
+"En donde el primer argumento es lo que se va a cambiar 
+ y el segundo argumento lo que se va a respaldar"<br>
+        Example:<br>
     ./change-cert.sh new ori</p><br>
     
 Now the application of the new certificate begins, 
