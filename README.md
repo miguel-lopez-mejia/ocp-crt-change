@@ -16,7 +16,7 @@ del mismo. </p>
 Requeriminetos.
 ---------------------------------------------------------------------
 Para realizar el cambio se necesita:<br>
-Los archivos de:<br>
+Los directorios de:<br>
 <strong>crt_ori</strong><br>
 -cert-ori.crt<br>
 -Cacert-ori.crt<br>
