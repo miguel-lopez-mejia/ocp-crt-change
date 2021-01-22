@@ -31,14 +31,15 @@ Y tambien los directorios de:<br>
 -new.key<br></pre>
 <br>
 A su vez tambien necesitamos:  <br>
+<pre>
 - Una terminal.<br>
 - Y el OpenShift Client para su ejecucion.<br>
 - Sesion de Cluster en donde se va a aplicar el certificado. 
-
+</pre>
 
 Uso.
 -------------------------------------------------------------
-Cambiar los certificados en las rutas de : <br>
+Cambia los certificados en las rutas de : <br>
       <pre>- Certificate<br>
            - CAcertificate and<br>
            - Key<br></pre>
@@ -54,37 +55,27 @@ Modo de uso:<br>
  
  <p>"En donde el primer argumento es lo que se va a cambiar 
     y el segundo argumento lo que se va a respaldar"</p>
---------------------------------------------------------------------------
-#
-#
-The three commands that will help us save the files
-<br>
--TLS_sav_CAC=TLS_${SAV}_CAC<br>
--TLS_sav_CRT=TLS_${SAV}_CRT<br>
--TLS_sav_KEY=TLS_${SAV}_KEY<br>
-#
-
-And now the new certificate starts to be saved with all the files.<br>
--TLS_new_CRT=$(<crt_new/cert-new.crt)<br>
--TLS_new_CAC=$(<crt_new/CAcert-new.crt)<br>
--TLS_new_KEY=$(<crt_new/new.key)<br>
-#
-#
-
-Then the original certificate will be saved.<br>
-TLS_ori_CRT=$(<crt_ori/cert-ori.crt)<br>
-TLS_ori_CAC=$(<crt_ori/CAcert-ori.crt)<br>
-TLS_ori_KEY=$(<crt_ori/ori.key)<br>
-#
-#
-  Then the application of the certificates begins.<br>
+    
+Then the application of the certificates begins.<br>
+<pre>
 1. First with the new.<br>
 2. Then with the original.<br>
 3. And finally with the empty certificate //That this only throws empty arguments<br>
-</br>
+</br></pre>
+
+"En donde guarda la configuracion del certificado en un archiv .yml"
+
+Finalmente - Leer namespace y ruta para modificar el cert.
+"En donde toma el certificado y lo pone en la ruta, 
+no sin antes realizar un respaldo de la configuracion de la ruta,
+creando una carpeta de backup, y por ultimo saca el certificado de
+la ruta y te imprime los datos del certificado nuevo"
+
+
+ 
 
 
 
 
-Finally - Read namespace and route to modify the cert
+
 
