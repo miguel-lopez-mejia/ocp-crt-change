@@ -16,14 +16,21 @@ del mismo. </p>
 Requeriminetos.
 ---------------------------------------------------------------------
 Para realizar el cambio se necesita:<br>
-Los archivos <br>
--TLS_sav_CAC=TLS_${SAV}_CAC<br>
--TLS_sav_CRT=TLS_${SAV}_CRT<br>
--TLS_sav_KEY=TLS_${SAV}_KEY<br>
-Tanto del certificado nuevo como del original, a su vez tambien
-necesitamos - <br>
+Los archivos de:
+<h4>crt_ori</h4><br>
+-cert-ori.crt<br>
+-Cacert-ori.crt<br>
+-ori.key<br>
+-list<br>
+Y tambien los archivos de:<br>
+<h4>crt_new</h4><br>
+-cert-new.crt<br>
+-Cacert-new.crt<br>
+-new.key<br>
+A su vez tambien necesitamos:  <br>
 - Una terminal.<br>
 - Y el OpenShift Client para su ejecucion.<br>
+- Sesion de Cluster en donde se va a aplicar el certificado. 
 
 -----------------------------------------------------------------
 Uso.
@@ -40,9 +47,7 @@ Use mode select:
  -"emp" Change/Save empty cert.
  
  -"ori" Change/Save the current cert.
-Declare the actions to be taken later
--TYP=$1
--SAV=$2
+
 #
 #
 The three commands that will help us save the files
@@ -75,3 +80,4 @@ TLS_ori_KEY=$(<crt_ori/ori.key)<br>
 
 
 Finally - Read namespace and route to modify the cert
+
