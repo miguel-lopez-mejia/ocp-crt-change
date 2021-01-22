@@ -62,7 +62,8 @@ Modo de uso:<br>
  <p>"En donde el primer argumento es lo que se va a cambiar 
     y el segundo argumento lo que se va a respaldar"</p>
     
-Then the application of the certificates begins.<br>
+Now the application of the new certificate begins, 
+are without before saving the files of the directories ori and new.<br>
 <pre>
 1. First with the new.<br>
 2. Then with the original.<br>
