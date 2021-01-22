@@ -16,14 +16,14 @@ del mismo. </p>
 Requeriminetos.
 ---------------------------------------------------------------------
 Para realizar el cambio se necesita:<br>
-Los archivos de:
-<h4>crt_ori</h4><br>
+Los archivos de:<br>
+<strong>crt_ori</strong><br>
 -cert-ori.crt<br>
 -Cacert-ori.crt<br>
 -ori.key<br>
 -list<br>
 Y tambien los archivos de:<br>
-<h4>crt_new</h4><br>
+<strong>crt_new</strong><br>
 -cert-new.crt<br>
 -Cacert-new.crt<br>
 -new.key<br>
