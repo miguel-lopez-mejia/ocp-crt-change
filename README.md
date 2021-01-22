@@ -48,10 +48,15 @@ Cambia los certificados en las rutas de : <br>
 Modo de uso:<br>    
 <pre>
  -"new" Change/Save new cert.
- 
+    |
+ (Nuevo)
  -"emp" Change/Save empty cert.
- 
+    |
+ (Vacio)
  -"ori" Change/Save the current cert.
+    |
+ (Original o
+  Actual)
  </pre>
  
  <p>"En donde el primer argumento es lo que se va a cambiar 
