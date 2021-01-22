@@ -60,12 +60,12 @@ Modo de uso:<br>
  </pre>
  
 
-<p> Run the command:<br>
+<strong><p> Run the command:<br></strong>
 ./change-cert.sh <change_select> <save_select><br>
 "En donde el primer argumento es lo que se va a cambiar 
- y el segundo argumento lo que se va a respaldar"<br>
-        Example:<br>
-    ./change-cert.sh new ori</p><br>
+ y el segundo argumento lo que se va a respaldar"<br></p>
+    <code>    Example:<br>
+    ./change-cert.sh new ori<br></code>
     
 Now the application of the new certificate begins, 
 are without before saving the files of the directories ori and new.<br>
