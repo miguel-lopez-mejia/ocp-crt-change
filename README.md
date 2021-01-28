@@ -6,8 +6,8 @@ Descripcion.
 <p> Lo que se realiza para el cambio de certificado es lo siguiente:<br>
 Empieza guardando el certificado original (actual) y a su vez
 el nuevo, una vez que se hayan guardado comienza a reescribir(aplicar)
-el certificado original o el actual por el nuevo, dependiendo de
-el orden en que lo hayas puesto.
+el certificado original o el actual por el nuevo, dependiendo del
+orden en que lo hayas puesto.
 Finalmente comienza a leer el namespace y la ruta
 en donde se encuentra el certificado para realizar la modificación 
 del mismo. </p>
