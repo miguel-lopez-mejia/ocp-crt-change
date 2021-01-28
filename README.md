@@ -12,8 +12,6 @@ este el pod nuevo ya solo esperaremos a que este listo para su uso.
 Ya por último solo regresa él pod nuevo con su nombre y que aún no está listo.</p>
 <p>
 Ejemplo:
-</p>
-<p>
 <code>
 Status - tu contenedor ya está listo o no.
 "Hace un loop hasta que este listo y pone el pod en una lista de terminados,
