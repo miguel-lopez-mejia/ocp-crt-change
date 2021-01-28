@@ -13,7 +13,7 @@ en donde se encuentra el certificado para realizar la modificacion
 del mismo. </p>
 
 
-Requeriminetos.
+Requerimietos.
 -------------------------------------------------------------
 Para realizar el cambio se necesita:<br>
 El directorio de:<br>
@@ -60,14 +60,14 @@ Modo de uso:<br>
  </pre>
  
 
-<strong><p> Run the command:<br></strong>
+<strong><p> Ejecutar el comando.:<br></strong>
 <code>./change-cert.sh <change_select> <save_select></code><br>
 "En donde el primer argumento es lo que se va a cambiar 
  y el segundo argumento lo que se va a respaldar"<br></p>
     <code>    Example:<br>
     ./change-cert.sh new ori</code><br>
     
-Now the application of the new certificate begins, 
+Ahora la aplicacion del nuevo certificado empieza , 
 are without before saving the files of the directories ori and new.<br>
 <pre>
 1. First with the new.<br>
