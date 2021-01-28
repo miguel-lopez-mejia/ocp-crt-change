@@ -9,11 +9,11 @@ el nuevo, una vez que se hayan guardado comienza a reescribir(aplicar)
 el certificado original o el actual por el nuevo, dependiendo de
 el orden en que lo hayas puesto.
 Finalmente comienza a leer el namespace y la ruta
-en donde se encuentra el certificado para realizar la modificacion 
+en donde se encuentra el certificado para realizar la modificación 
 del mismo. </p>
 
 
-Requerimietos.
+Requerimientos.
 -------------------------------------------------------------
 Para realizar el cambio se necesita:<br>
 El directorio de:<br>
@@ -67,20 +67,20 @@ Modo de uso:<br>
     <code>    Example:<br>
     ./change-cert.sh new ori</code><br>
     
-Ahora la aplicacion del nuevo certificado empieza , 
-are without before saving the files of the directories ori and new.<br>
+Ahora la aplicación del nuevo certificado empieza ,
+no sin antes guardar los archivos de los directorios ori y new.<br>
 <pre>
-1. First with the new.<br>
-2. Then with the original.<br>
-3. And finally with the empty certificate //That this only throws empty arguments<br>
+1. Primero con el new.<br>
+2. Enseguida con la parte de ori.<br>
+3. Y al final con la parte vacia del certificado //El cual solo contiene argumentos vacios.<br>
 </br></pre>
 
 "En donde guarda la configuracion del certificado en un archivo .yml"
 
 Finalmente - Leer namespace y ruta para modificar el cert.<br>
 <p>"En donde toma el certificado y lo pone en la ruta, 
-no sin antes realizar un respaldo de la configuracion de la ruta,
-creando una carpeta de backup, y por ultimo saca el certificado de
+no sin antes realizar un respaldo de la configuración de la ruta,
+creando una carpeta de backup, y por último saca el certificado de
 la ruta y te imprime los datos del certificado nuevo"</p>
 
 
