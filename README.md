@@ -1,89 +1,53 @@
-# jn-crt-change
+# bsi-restart-pods-sso.sh
 
-Descripcion.
+Descripción
 -
-<p> 
-Instala un certificado SSL a una lista de rutas de Openshift, 
-y respalda la configuración de la ruta y los archivos del certificado actual de cada ruta de la lista.
 
-Lo que realiza para el cambio de certificado es:<br>
-Empieza guardando el certificado original (actual) y a su vez
-el nuevo, una vez que se hayan guardado comienza a reescribir(aplicar)
-el certificado original o el actual por el nuevo, dependiendo del
-orden en que lo hayas puesto.
-Finalmente comienza a leer el namespace y la ruta
-en donde se encuentra el certificado para realizar la modificación 
-del mismo. </p>
+<p>Reinicio de pod´s 1 por 1: Lleva a cabo el reinicio 
+de pod´s, lo primero que se va a realizar es limpiar la pantalla,
+una vez hecho esto sacara una lista de pod´s (del más viejo al más nuevo)
+para los cuales se va a realizar un reset, ahora crea una lista donde válida que se guardan
+y una vez guardados se eliminan y se creará un pod nuevo, cuando 
+este el pod nuevo ya solo esperaremos a que este listo para su uso.
+Ya por último solo regresa él pod nuevo con su nombre y que aún no está listo.</p>
+<p>
+Ejemplo:
+</p>
+<p>
+<code>
+Status - tu contenedor ya está listo o no.
+"Hace un loop hasta que este listo y pone el pod en una lista de terminados,
+después lo descarta y continua el proceso."
+<code>
+<h4>Nota - empieza el <code>for</code> con la lista que creamos solo con sso,
+si son evicted son borrados, si no son evicted sacara otra vez 
+la lista con sso, compara la lista y se realiza el proceso de reset,
+guardando el pod nuevo<h4>
+</p>
 
-
-Requerimientos.
+Requerimientos
 -
-Para realizar el cambio se necesita:<br>
-El directorio de:<br>
-<strong>crt_ori(con sus respectivos archivos)</strong><br>
-<pre>
-- cert-ori.crt</li><br>
-- Cacert-ori.crt</li><br>
-- ori.key</li><br>
-- list<br></pre>
-Y tambien el directorio de:<br>
-<strong>crt_new (con sus respectivos archivos)</strong><br>
-<pre>
--cert-new.crt<br>
--Cacert-new.crt<br>
--new.key<br></pre>
-<br>
 
-A su vez también necesitamos:  <br>
+<p>Para ejecutar el script Restart necesitaremos:
+</p>
 <pre>
-- Una terminal.<br>
-- Y el OpenShift Client para su ejecución.<br>
-- Sesión de Cluster en donde se va a aplicar el certificado. 
+- Una sesión de Cluster.
+- Una terminal.
+- El OpenShift Client para su ejecución.
 </pre>
 
-Uso.
+
+Uso
 -
-Cambiar los certificados en las rutas de : <br>
-      <pre>- Certificate< //Por parte del servidor <br>
-           - CAcertificate//Por parte de la Autoridad de Certificacion<br>
-           - Key//La llave del certificado
-<br></pre>
-Modo de uso:<br>    
+<p> Se cuentan con las siguientes variables de las cuales solo el usuario podra manipular <code>NS</code> y <code>PN</code>:</p>
 <pre>
- -"new" Change/Save new cert.
-    |
- (Nuevo)
- -"emp" Change/Save empty cert.
-    |
- (Vacio)
- -"ori" Change/Save the current cert.
-    |
- (Original o
-  Actual)
- </pre>
- 
-
-<strong><p> Ejecutar el comando.:<br></strong>
-<code>./change-cert.sh <change_select> <save_select></code><br>
-"En donde el primer argumento es lo que se va a cambiar 
- y el segundo argumento lo que se va a respaldar"<br></p>
-    <code>    Example:<br>
-    ./change-cert.sh new ori</code><br>
-    
-Ahora empieza la aplicación del nuevo certificado, primero
-con la parte de new, enseguida con el ori y al ultimo la parte
-del certificado vacio (El cual solo contiene argumentos vacíos.),
-no sin antes guardar los archivos de los directorios ori y new.<br>
-
-"En donde guarda la configuración del certificado en un archivo .yml"
-
-Finalmente - Leer namespace y ruta para modificar el cert.<br>
-<p>"En donde toma el certificado y lo pone en la ruta, 
-no sin antes realizar un respaldo de la configuración de la ruta,
-creando una carpeta de backup, y por último saca el certificado de
-la ruta y te imprime los datos del certificado nuevo"</p>
-
-
+NS="seguridad-sso";
+PN="sso";
+statusTRUE="true";
+statusFAIL="Failed";
+statusEVIC="Evicted";
+flagS="Red Hat Single Sign-On 7.3.8.GA (WildFly Core 6.0.27.Final-redhat-00001) started in";
+</pre>
 
  
 
