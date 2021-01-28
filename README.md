@@ -11,16 +11,18 @@ y una vez guardados se eliminan y se creará un pod nuevo, cuando
 este el pod nuevo ya solo esperaremos a que este listo para su uso.
 Ya por último solo regresa él pod nuevo con su nombre y que aún no está listo.</p>
 <p>
-Ejemplo:
+Ejemplo:</p>
 <code>
 Status - tu contenedor ya está listo o no.
 "Hace un loop hasta que este listo y pone el pod en una lista de terminados,
 después lo descarta y continua el proceso."
 <code>
-<h4>Nota - empieza el <code>for</code> con la lista que creamos solo con sso,
+<h4>Nota <h4>
+ <p>
+"Empieza el <code>for</code> con la lista que creamos solo con sso,
 si son evicted son borrados, si no son evicted sacara otra vez 
 la lista con sso, compara la lista y se realiza el proceso de reset,
-guardando el pod nuevo<h4>
+guardando el pod nuevo"
 </p>
 
 Requerimientos
