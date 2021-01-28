@@ -1,5 +1,5 @@
 
-# ocp-crt-change
+# jt-crt-change
 
 Descripcion.
 ------------------------------------------------------------------------
@@ -31,11 +31,11 @@ Y tambien el directorio de:<br>
 -new.key<br></pre>
 <br>
 
-A su vez tambien necesitamos:  <br>
+A su vez también necesitamos:  <br>
 <pre>
 - Una terminal.<br>
-- Y el OpenShift Client para su ejecucion.<br>
-- Sesion de Cluster en donde se va a aplicar el certificado. 
+- Y el OpenShift Client para su ejecución.<br>
+- Sesión de Cluster en donde se va a aplicar el certificado. 
 </pre>
 
 Uso.
@@ -72,10 +72,10 @@ no sin antes guardar los archivos de los directorios ori y new.<br>
 <pre>
 1. Primero con el new.<br>
 2. Enseguida con la parte de ori.<br>
-3. Y al final con la parte vacia del certificado //El cual solo contiene argumentos vacios.<br>
+3. Y al final con la parte vacía del certificado //El cual solo contiene argumentos vacios.<br>
 </br></pre>
 
-"En donde guarda la configuracion del certificado en un archivo .yml"
+"En donde guarda la configuración del certificado en un archivo .yml"
 
 Finalmente - Leer namespace y ruta para modificar el cert.<br>
 <p>"En donde toma el certificado y lo pone en la ruta, 
