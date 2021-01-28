@@ -1,9 +1,12 @@
-
-# jt-crt-change
+# jn-crt-change
 
 Descripcion.
-------------------------------------------------------------------------
-<p> Lo que se realiza para el cambio de certificado es lo siguiente:<br>
+-
+<p> 
+Instala un certificado SSL a una lista de rutas de Openshift, 
+y respalda la configuración de la ruta y los archivos del certificado actual de cada ruta de la lista.
+
+Lo que realiza para el cambio de certificado es:<br>
 Empieza guardando el certificado original (actual) y a su vez
 el nuevo, una vez que se hayan guardado comienza a reescribir(aplicar)
 el certificado original o el actual por el nuevo, dependiendo del
@@ -14,7 +17,7 @@ del mismo. </p>
 
 
 Requerimientos.
--------------------------------------------------------------
+-
 Para realizar el cambio se necesita:<br>
 El directorio de:<br>
 <strong>crt_ori(con sus respectivos archivos)</strong><br>
@@ -39,7 +42,7 @@ A su vez también necesitamos:  <br>
 </pre>
 
 Uso.
--------------------------------------------------------------
+-
 Cambiar los certificados en las rutas de : <br>
       <pre>- Certificate< //Por parte del servidor <br>
            - CAcertificate//Por parte de la Autoridad de Certificacion<br>
@@ -67,13 +70,10 @@ Modo de uso:<br>
     <code>    Example:<br>
     ./change-cert.sh new ori</code><br>
     
-Ahora la aplicación del nuevo certificado empieza ,
+Ahora empieza la aplicación del nuevo certificado, primero
+con la parte de new, enseguida con el ori y al ultimo la parte
+del certificado vacio (El cual solo contiene argumentos vacíos.),
 no sin antes guardar los archivos de los directorios ori y new.<br>
-<pre>
-1. Primero con el new.<br>
-2. Enseguida con la parte de ori.<br>
-3. Y al final con la parte vacía del certificado //El cual solo contiene argumentos vacios.<br>
-</br></pre>
 
 "En donde guarda la configuración del certificado en un archivo .yml"
 
@@ -82,6 +82,7 @@ Finalmente - Leer namespace y ruta para modificar el cert.<br>
 no sin antes realizar un respaldo de la configuración de la ruta,
 creando una carpeta de backup, y por último saca el certificado de
 la ruta y te imprime los datos del certificado nuevo"</p>
+
 
 
  
