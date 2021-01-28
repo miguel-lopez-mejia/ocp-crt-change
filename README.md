@@ -16,7 +16,7 @@ Ejemplo:</p>
 Status - tu contenedor ya está listo o no.
 "Hace un loop hasta que este listo y pone el pod en una lista de terminados,
 después lo descarta y continua el proceso."
-<code>
+</code>
  <p><strong>Nota</p></strong>
  <p>
 "Empieza el <code>for</code> con la lista que creamos solo con sso,
