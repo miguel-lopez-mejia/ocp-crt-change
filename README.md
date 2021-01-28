@@ -12,11 +12,11 @@ este el pod nuevo ya solo esperaremos a que esté listo para su uso.
 Ya por último solo regresa él pod nuevo con su nombre y que aún no está listo.</p>
 <p>
 Ejemplo:</p>
-<code>
-Status - tu contenedor ya está listo o no.
+<pre>
+Status - Tu contenedor ya está listo o no.
 "Hace un loop hasta que este listo y pone el pod en una lista de terminados,
 después lo descarta y continua el proceso."
-</code>
+</pre>
 
  <p><strong>Nota</p></strong>
  <p>
